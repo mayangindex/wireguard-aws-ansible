@@ -1,0 +1,2 @@
+[homeserver:vars]
+ansible_user = ubuntu

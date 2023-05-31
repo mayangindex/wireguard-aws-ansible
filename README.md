@@ -12,7 +12,8 @@ git clone https://github.com/rishavnandi/ansible_selfhost_vpn
 
 - Then simply run the playbook
 ```bash
-ansible-playbook run.yml -K
+ansible-playbook run.yml  --extra-vars "wg_password=PASSWORD ec2_ssh_key=AWS_SSH_KEY"
+
 ```
 - Then you can visit the nginx proxy manager at your server's IP and port 81 to configure a domain that points to nginx and WireGuard sites
 

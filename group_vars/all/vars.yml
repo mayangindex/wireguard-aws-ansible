@@ -1,0 +1,15 @@
+---
+username: ubuntu
+
+docker_dir: /home/{{ username }}/docker
+
+wg_password: "{{ wg_password }}"
+packages:
+  - unzip
+  - wget
+  - curl
+  - git
+  - ranger
+  - build-essential
+  - python3
+  - python3-pip
