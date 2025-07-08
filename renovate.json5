@@ -1,0 +1,25 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    ":dependencyDashboard"
+  ],
+  "baseBranches": [
+    "main"
+  ],
+  "packageRules": [
+    {
+      "matchPackageNames": ["*"],
+      "schedule": ["on monday"],
+      "automerge": true
+    }
+  ],
+  "ansible": {
+    "fileMatch": [
+      ".*\\.ya?ml$",
+      "roles/.*/tasks/.*\\.ya?ml$",
+      "ansible/.*/.*\\.ya?ml$"
+    ]
+  },
+  "separateMajorMinor": true
+}
